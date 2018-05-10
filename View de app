@@ -1,0 +1,10 @@
+from django.shortcuts import render
+from mongoengine import Document, fields
+from django.views.generic import TemplateView
+from usuario.models import usuario
+
+# Create your views here.
+
+class login(TemplateView):
+	usuario.objects.create(Cuenta='PORTU',Clave='666')
+	template_name='usuario/login.html'
