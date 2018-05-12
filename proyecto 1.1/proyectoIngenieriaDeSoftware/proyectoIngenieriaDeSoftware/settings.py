@@ -85,7 +85,7 @@ DATABASES = {
 }
 from mongoengine import connect
 MONGO_DATABASE_NAME = 'BDPI'
-MONGO_HOST = 'localhost'
+MONGO_HOST = 'mongodb://atag:123@ds221990.mlab.com:21990/bdpi'
 MONGO_PORT = 27017
 connect(MONGO_DATABASE_NAME, host=MONGO_HOST, port=MONGO_PORT)
 
